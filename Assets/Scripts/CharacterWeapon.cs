@@ -8,12 +8,6 @@ public class CharacterWeapon : MonoBehaviour
         grabWeapon = GameObject.FindGameObjectWithTag("Player").GetComponent<GrabWeapon>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     private void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Player")
